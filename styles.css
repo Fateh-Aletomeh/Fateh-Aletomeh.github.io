@@ -58,7 +58,7 @@ main {
 
 /* Blog Preview Cards */
 .blog-preview {
-  padding: 2rem 0;
+  padding: 0.4rem 0;
   border-bottom: 1px solid #e8e8e8;
   transition: transform 0.2s ease;
 }
