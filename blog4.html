@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Agent Implementation</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">   
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">← Back to Home</a>
+    </nav>
+  </header>
+  <main>
+    <article class="blog-post">
+      <h1>First Agent Implementation</h1>
+      <p class="blog-date">February 14, 2026</p>
+      
+      <div class="blog-content">
+        <p>Mid-February marked a significant milestone for our project as we got to test with the API key and successfully implemented our first agent!</p>
+        
+        <h2>Testing with the API</h2>
+        
+        <p>After weeks of preparation, we finally got the opportunity to test our code with the OpenAI API key. This was a crucial step that allowed us to move from theoretical planning to actual implementation and testing.</p>
+        
+        <p>The API integration worked smoothly thanks to the helper functions we had built in January. We were able to send natural language queries to the API and receive structured responses that our system could process.</p>
+        
+        <h2>Planner agent</h2>
+        
+        <p>Our first implemented agent was the planner agent, designed to create to-do lists based on user input. The planner agent can:</p>
+        
+        <ul>
+          <li>Parse natural language requests for task creation</li>
+          <li>Organise tasks by priority and deadline</li>
+          <li>Generate structured to-do lists</li>
+          <li>Integrate with the user's calendar to check for scheduling conflicts</li>
+        </ul>
+        
+        <figure>
+          <img src="images/planner_agent.png" alt="Planner agent creating a TODO list for booking a meeting">
+          <figcaption>The planner agent breaks down a meeting booking request into 6 actionable steps</figcaption>
+        </figure>
+        
+        <p>The planner agent serves as a proof of concept for our multiagent architecture. It demonstrates how individual agents can leverage our helper functions to perform specific tasks while maintaining clean separation of concerns.</p>
+        
+        <h2>Switching to Google Calendar</h2>
+        
+        <p>During development, we encountered some issues with Azure API secrets that were causing authentication problems. After evaluating our options, we made the decision to switch to Google Calendar API. This change actually improved our system in several ways:</p>
+        
+        <ul>
+          <li>More straightforward authentication process</li>
+          <li>Better documentation and community support</li>
+          <li>More reliable API performance</li>
+          <li>Easier integration with other Google services</li>
+        </ul>
+        
+        <p>The switch required some refactoring of our helper functions, but thanks to our modular architecture, we were able to make the transition relatively smoothly.</p>
+        
+        <h2>Moving forward</h2>
+        
+        <p>With the planner agent working successfully, we're now confident in our architecture and ready to implement the remaining agents: the scheduler agent and the orchestrator that will coordinate between all agents. We're on track to have a full prototype by the end of February.</p>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2026 Group 31</p>
+  </footer>
+</body>
+</html>

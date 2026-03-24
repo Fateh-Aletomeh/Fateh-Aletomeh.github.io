@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Prototype Complete</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">   
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">← Back to Home</a>
+    </nav>
+  </header>
+  <main>
+    <article class="blog-post">
+      <h1>Full Prototype Complete</h1>
+      <p class="blog-date">February 28, 2026</p>
+      
+      <div class="blog-content">
+        <p>We finished February on a high note with a fully functional prototype and a successful presentation at NTT Data!</p>
+        
+        <h2>Completing the multiagent system</h2>
+        
+        <p>Over the final weeks of February, we successfully implemented the complete multiagent architecture. Our system now includes:</p>
+        
+        <ul>
+          <li><strong>Planner agent:</strong> Creates and manages to-do lists based on user requests</li>
+          <li><strong>Scheduler agent:</strong> Handles meeting scheduling and calendar management</li>
+          <li><strong>Orchestrator:</strong> Coordinates between agents and manages the overall workflow</li>
+        </ul>
+        
+        <p>The orchestrator acts as the brain of the system, determining which agent should handle each user request and managing the communication between agents when multiple agents need to collaborate on a task.</p>
+        
+        <figure>
+          <img src="images/meeting_options.png" alt="Webex bot showing available meeting time options">
+          <figcaption>The bot analyses calendars and presents optimal meeting times to the user</figcaption>
+        </figure>
+        
+        <h2>Setting up a temporary database</h2>
+        
+        <p>To support user preferences and maintain conversation context between sessions, we set up a temporary database. This allows our system to store and retrieve important information such as meeting preferences, preferred time slots for different types of meetings, and whether the user is authorised with Webex.</p>
+        
+        <p>The database implementation provides a foundation for more sophisticated personalisation features that we plan to build in the coming weeks.</p>
+        
+        <h2>Presentation at NTT Data</h2>
+        
+        <figure>
+          <img src="images/ntt_data_presentation.png" alt="Team presenting at NTT Data">
+          <figcaption>Presenting our multiagent system architecture at NTT Data</figcaption>
+        </figure>
+        
+        <p>We presented our full prototype at NTT Data and received good feedback on the project. The team showed interest in our multiagent architecture and the practical applications for workplace productivity.</p>
+        
+        <figure>
+          <img src="images/meeting_booked.png" alt="Successful meeting booking confirmation in Webex">
+          <figcaption>The bot successfully books recurring meetings and confirms with the user</figcaption>
+        </figure>
+        
+        <p>Several members of the NTT Data team provided valuable suggestions for future enhancements.</p>
+        
+        <h2>Looking ahead</h2>
+        
+        <p>With a working prototype and positive feedback from industry professionals, we're energised to continue refining the system. Our next priorities include fully implementing user preferences to allow for more personalised meeting scheduling, and integrating web OAuth for more secure and seamless authentication. We also plan to improve the natural language understanding and conduct more extensive user testing.</p>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2026 Group 31</p>
+  </footer>
+</body>
+</html>
